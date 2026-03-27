@@ -32,6 +32,10 @@
     .contact-form-embed {
         grid-column: 1 / -1;
     }
+
+    .contact-form-embed__frame {
+        height: 42rem;
+    }
 }
 
 @media (min-width: 64rem) {

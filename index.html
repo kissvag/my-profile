@@ -1,351 +1,513 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Personal profile website for Sofiia Ropiak, project manager and International Business student."
-    />
-    <title>Sofiia Ropiak | Personal Profile</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&amp;family=Ballet:opsz@16..72&amp;family=Monsieur+La+Doulaise&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
-  <body>
-    <div class="page-shell page-shell--texture">
-      <header class="site-header">
-        <div class="container site-header__inner">
-          <a class="site-brand" href="#top" aria-label="Sofiia Ropiak home">SR</a>
-          <nav class="site-nav" aria-label="Primary navigation">
-            <ul class="site-nav__list">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Personal profile website for Sofiia Ropiak, project manager and International Business student."
+        />
+        <title>Sofiia Ropiak | Personal Profile</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/icons/favicon.svg"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&amp;family=Ballet:opsz@16..72&amp;family=Monsieur+La+Doulaise&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/main.css" />
+    </head>
+    <body>
+        <div class="page-shell page-shell--texture">
+            <header class="site-header">
+                <div class="container site-header__inner">
+                    <a
+                        class="site-brand"
+                        href="#top"
+                        aria-label="Sofiia Ropiak home"
+                        >SR</a
+                    >
+                    <nav class="site-nav" aria-label="Primary navigation">
+                        <ul class="site-nav__list">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main id="top">
+                <!-- Hero Section -->
+                <section class="section hero" aria-labelledby="hero-title">
+                    <div class="container hero__grid">
+                        <div class="hero__content">
+                            <p class="eyebrow">Personal profile</p>
+                            <p class="hero__signature">Sofiia</p>
+                            <h1 class="hero__title" id="hero-title">
+                                Sofiia Ropiak
+                            </h1>
+                            <p class="hero__subtitle">
+                                International Business student with a growing
+                                focus on project management, entrepreneurship,
+                                and creative industries.
+                            </p>
+                            <p class="hero__lead">
+                                Ambitious, analytical, and creatively driven,
+                                with experience in design, communication, and
+                                structured collaboration.
+                            </p>
+                            <div class="hero__actions">
+                                <a
+                                    class="button button--primary"
+                                    href="#contact"
+                                    >Contact</a
+                                >
+                                <a
+                                    class="button button--ghost"
+                                    href="#experience"
+                                    >View profile</a
+                                >
+                            </div>
+                        </div>
+
+                        <aside
+                            class="hero__visual card card--portrait"
+                            aria-label="Profile preview"
+                        >
+                            <div class="portrait-frame">
+                                <div class="portrait-frame__halo"></div>
+                                <figure
+                                    class="portrait-frame__primary media-frame"
+                                >
+                                    <img
+                                        class="media-frame__image media-frame__image--portrait"
+                                        src="./assets/images/sofiia-portrait-01.jpg"
+                                        alt="Sofiia Ropiak seated at a restaurant table in a black shirt."
+                                    />
+                                </figure>
+                                <div
+                                    class="portrait-frame__gallery"
+                                    aria-label="Additional profile photographs"
+                                >
+                                    <figure
+                                        class="media-frame media-frame--small"
+                                    >
+                                        <img
+                                            class="media-frame__image media-frame__image--certificate"
+                                            src="./assets/images/sofiia-portrait-02.jpg"
+                                            alt="Sofiia Ropiak holding a certificate outside David Game College."
+                                        />
+                                    </figure>
+                                    <figure
+                                        class="media-frame media-frame--small"
+                                    >
+                                        <img
+                                            class="media-frame__image media-frame__image--night"
+                                            src="./assets/images/sofiia-portrait-03.jpg"
+                                            alt="Sofiia Ropiak in a black sweater against a dark interior background."
+                                        />
+                                    </figure>
+                                </div>
+                                <p class="portrait-frame__caption">
+                                    Project manager
+                                </p>
+                                <p class="portrait-frame__location">
+                                    Paris, France
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section
+                    class="section section--soft"
+                    id="about"
+                    aria-labelledby="about-title"
+                >
+                    <div class="container">
+                        <div class="section-heading">
+                            <p class="section-heading__accent">Profile</p>
+                            <h2 class="section-heading__title" id="about-title">
+                                About
+                            </h2>
+                        </div>
+
+                        <div class="about-grid">
+                            <article class="card card--feature">
+                                <p>
+                                    I am an ambitious and creative International
+                                    Business student at IESEG School of
+                                    Management, passionate about project
+                                    management, entrepreneurship, and creative
+                                    industries.
+                                </p>
+                                <p>
+                                    I combine analytical thinking with a strong
+                                    artistic background in design, photography,
+                                    and writing, and I am highly motivated to
+                                    develop my leadership and organizational
+                                    skills to manage projects and deliver
+                                    innovative solutions.
+                                </p>
+                            </article>
+
+                            <dl class="info-list card">
+                                <dt>Current focus</dt>
+                                <dd>
+                                    Project management and international
+                                    business
+                                </dd>
+                                <dt>Creative strengths</dt>
+                                <dd>Design, photography, vlogging, poetry</dd>
+                                <dt>Core mindset</dt>
+                                <dd>
+                                    Leadership, structure, communication,
+                                    resilience
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <section
+                    class="section"
+                    id="experience"
+                    aria-labelledby="experience-title"
+                >
+                    <div class="container">
+                        <div class="section-heading">
+                            <p class="section-heading__accent">Career path</p>
+                            <h2
+                                class="section-heading__title"
+                                id="experience-title"
+                            >
+                                Experience
+                            </h2>
+                        </div>
+
+                        <div class="timeline">
+                            <article class="timeline__item card">
+                                <div class="timeline__meta">
+                                    <p class="timeline__date">
+                                        Aug 2023 - Present
+                                    </p>
+                                    <p class="timeline__place">
+                                        Self-employed | Odesa, Ukraine
+                                    </p>
+                                </div>
+                                <div class="timeline__content">
+                                    <h3>Freelance Graphic Designer</h3>
+                                    <ul class="list">
+                                        <li>
+                                            Analyzed market trends to maintain
+                                            product quality and competitive
+                                            value.
+                                        </li>
+                                        <li>
+                                            Learned to meet deadlines and adapt
+                                            to diverse customer demands.
+                                        </li>
+                                        <li>
+                                            Improved communication and
+                                            client-interaction skills in a
+                                            professional setting.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section
+                    class="section section--soft"
+                    id="education"
+                    aria-labelledby="education-title"
+                >
+                    <div class="container">
+                        <div class="section-heading">
+                            <p class="section-heading__accent">Academic path</p>
+                            <h2
+                                class="section-heading__title"
+                                id="education-title"
+                            >
+                                Education
+                            </h2>
+                        </div>
+
+                        <div class="cards-grid cards-grid--education">
+                            <article class="card card--stack">
+                                <p class="card__eyebrow">2025 - 2028</p>
+                                <h3>Bachelor in International Business</h3>
+                                <p class="card__meta">
+                                    IESEG School of Management
+                                </p>
+                                <p>
+                                    Key subjects include Ethics and CSR,
+                                    International Business Law, Mathematics for
+                                    Business, Art and Science of Marketing,
+                                    Debate and Persuasion, Research and Writing,
+                                    and Business Exploration.
+                                </p>
+                            </article>
+
+                            <article class="card card--stack">
+                                <p class="card__eyebrow">
+                                    September 2023 - June 2025
+                                </p>
+                                <h3>A-Level Studies</h3>
+                                <p class="card__meta">
+                                    David Game College, London, UK
+                                </p>
+                                <p>Economics, Mathematics, and Geography.</p>
+                            </article>
+
+                            <article class="card card--stack">
+                                <p class="card__eyebrow">
+                                    September 2019 - April 2024
+                                </p>
+                                <h3>High School Diploma</h3>
+                                <p class="card__meta">
+                                    Lyceum “Mriya”, Odesa, Ukraine
+                                </p>
+                                <p>General Secondary Education.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section
+                    class="section"
+                    id="skills"
+                    aria-labelledby="skills-title"
+                >
+                    <div class="container">
+                        <div class="section-heading">
+                            <p class="section-heading__accent">Capabilities</p>
+                            <h2
+                                class="section-heading__title"
+                                id="skills-title"
+                            >
+                                Skills
+                            </h2>
+                        </div>
+
+                        <div class="chips-panel card">
+                            <ul class="chips" aria-label="Skills list">
+                                <li class="chip">
+                                    Oral and written communication
+                                </li>
+                                <li class="chip">Leadership</li>
+                                <li class="chip">Critical thinking</li>
+                                <li class="chip">Resilience</li>
+                                <li class="chip">Problem solving</li>
+                                <li class="chip">Negotiation</li>
+                                <li class="chip">Initiative</li>
+                                <li class="chip">Client interaction</li>
+                                <li class="chip">Team coordination</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Languages and Interests Section -->
+                <section
+                    class="section section--soft"
+                    aria-labelledby="profile-details-title"
+                >
+                    <div class="container">
+                        <div class="section-heading">
+                            <p class="section-heading__accent">
+                                Personal dimension
+                            </p>
+                            <h2
+                                class="section-heading__title"
+                                id="profile-details-title"
+                            >
+                                Languages, Certifications, and Interests
+                            </h2>
+                        </div>
+
+                        <div class="cards-grid cards-grid--three">
+                            <article class="card">
+                                <h3>Languages</h3>
+                                <dl class="data-list">
+                                    <dt>Ukrainian</dt>
+                                    <dd>Native</dd>
+                                    <dt>Russian</dt>
+                                    <dd>Native</dd>
+                                    <dt>English</dt>
+                                    <dd>Advanced (C1)</dd>
+                                    <dt>Spanish</dt>
+                                    <dd>Pre-Intermediate (A2)</dd>
+                                    <dt>French</dt>
+                                    <dd>Beginner (A1)</dd>
+                                </dl>
+                            </article>
+
+                            <article class="card">
+                                <h3>Courses & Certifications</h3>
+                                <ul class="list list--compact">
+                                    <li>
+                                        Hillel Project Management Course, Aug
+                                        2023 - Oct 2023
+                                    </li>
+                                    <li>
+                                        Duke of Edinburgh’s Award, Bronze and
+                                        Silver
+                                    </li>
+                                    <li>
+                                        Cambridge English Assessment: B1 Score
+                                        144, B2 Score 179
+                                    </li>
+                                    <li>IELTS: Band 7.5 (2024)</li>
+                                </ul>
+                            </article>
+
+                            <article class="card">
+                                <h3>Hobbies & Interests</h3>
+                                <ul class="list list--compact">
+                                    <li>
+                                        Drawing, with both digital and manual
+                                        illustration
+                                    </li>
+                                    <li>Photography and vlogging since 2022</li>
+                                    <li>
+                                        Poetry writing and a personal collection
+                                        in progress
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Activities Section -->
+                <section class="section" aria-labelledby="activities-title">
+                    <div class="container">
+                        <div class="section-heading">
+                            <p class="section-heading__accent">
+                                Leadership in practice
+                            </p>
+                            <h2
+                                class="section-heading__title"
+                                id="activities-title"
+                            >
+                                Activities & Volunteering
+                            </h2>
+                        </div>
+
+                        <article class="card card--feature">
+                            <p class="card__eyebrow">
+                                September 2023 - June 2025
+                            </p>
+                            <h3>Charity Committee, David Game College</h3>
+                            <ul class="list">
+                                <li>
+                                    Collaborated with peers on fundraising
+                                    initiatives and community outreach.
+                                </li>
+                                <li>
+                                    Strengthened empathy, public communication,
+                                    and promotional skills.
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section
+                    class="section section--soft"
+                    id="contact"
+                    aria-labelledby="contact-title"
+                >
+                    <div class="container">
+                        <div class="section-heading">
+                            <p class="section-heading__accent">
+                                Stay connected
+                            </p>
+                            <h2
+                                class="section-heading__title"
+                                id="contact-title"
+                            >
+                                Contact
+                            </h2>
+                        </div>
+
+                        <div class="contact-panel card">
+                            <div class="contact-panel__intro">
+                                <p class="contact-panel__signature">
+                                    Correspondence
+                                </p>
+                                <h3>
+                                    Open to thoughtful opportunities, creative
+                                    collaboration, and project-focused
+                                    conversations.
+                                </h3>
+                            </div>
+
+                            <address class="contact-grid">
+                                <a
+                                    class="contact-card"
+                                    href="mailto:reiji.sivana@gmail.com"
+                                >
+                                    <span class="contact-card__label"
+                                        >Email</span
+                                    >
+                                    <span class="contact-card__value"
+                                        >reiji.sivana@gmail.com</span
+                                    >
+                                </a>
+                                <a class="contact-card" href="tel:+33614140868">
+                                    <span class="contact-card__label"
+                                        >Phone</span
+                                    >
+                                    <span class="contact-card__value"
+                                        >+33 6 14 14 08 68</span
+                                    >
+                                </a>
+                                <a
+                                    class="contact-card"
+                                    href="#"
+                                    aria-label="LinkedIn profile placeholder"
+                                >
+                                    <span class="contact-card__label"
+                                        >LinkedIn</span
+                                    >
+                                    <span class="contact-card__value"
+                                        >linkedin.com/in/sofiia-ropiak</span
+                                    >
+                                </a>
+                                <p class="contact-card">
+                                    <span class="contact-card__label"
+                                        >Location</span
+                                    >
+                                    <span class="contact-card__value"
+                                        >Paris, France</span
+                                    >
+                                </p>
+                            </address>
+
+                            <div
+                                data-tf-live="01KMRQ1TSA3D22SYTDQMMS2R7Y"
+                            ></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-      </header>
-
-      <main id="top">
-        <!-- Hero Section -->
-        <section class="section hero" aria-labelledby="hero-title">
-          <div class="container hero__grid">
-            <div class="hero__content">
-              <p class="eyebrow">Personal profile</p>
-              <p class="hero__signature">Sofiia</p>
-              <h1 class="hero__title" id="hero-title">Sofiia Ropiak</h1>
-              <p class="hero__subtitle">
-                International Business student with a growing focus on project
-                management, entrepreneurship, and creative industries.
-              </p>
-              <p class="hero__lead">
-                Ambitious, analytical, and creatively driven, with experience in
-                design, communication, and structured collaboration.
-              </p>
-              <div class="hero__actions">
-                <a class="button button--primary" href="#contact">Contact</a>
-                <a class="button button--ghost" href="#experience">View profile</a>
-              </div>
-            </div>
-
-            <aside class="hero__visual card card--portrait" aria-label="Profile preview">
-              <div class="portrait-frame">
-                <div class="portrait-frame__halo"></div>
-                <figure class="portrait-frame__primary media-frame">
-                  <img
-                    class="media-frame__image media-frame__image--portrait"
-                    src="./assets/images/sofiia-portrait-01.jpg"
-                    alt="Sofiia Ropiak seated at a restaurant table in a black shirt."
-                  />
-                </figure>
-                <div class="portrait-frame__gallery" aria-label="Additional profile photographs">
-                  <figure class="media-frame media-frame--small">
-                    <img
-                      class="media-frame__image media-frame__image--certificate"
-                      src="./assets/images/sofiia-portrait-02.jpg"
-                      alt="Sofiia Ropiak holding a certificate outside David Game College."
-                    />
-                  </figure>
-                  <figure class="media-frame media-frame--small">
-                    <img
-                      class="media-frame__image media-frame__image--night"
-                      src="./assets/images/sofiia-portrait-03.jpg"
-                      alt="Sofiia Ropiak in a black sweater against a dark interior background."
-                    />
-                  </figure>
-                </div>
-                <p class="portrait-frame__caption">Project manager</p>
-                <p class="portrait-frame__location">Paris, France</p>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="section section--soft" id="about" aria-labelledby="about-title">
-          <div class="container">
-            <div class="section-heading">
-              <p class="section-heading__accent">Profile</p>
-              <h2 class="section-heading__title" id="about-title">About</h2>
-            </div>
-
-            <div class="about-grid">
-              <article class="card card--feature">
-                <p>
-                  I am an ambitious and creative International Business student
-                  at IESEG School of Management, passionate about project
-                  management, entrepreneurship, and creative industries.
-                </p>
-                <p>
-                  I combine analytical thinking with a strong artistic
-                  background in design, photography, and writing, and I am
-                  highly motivated to develop my leadership and organizational
-                  skills to manage projects and deliver innovative solutions.
-                </p>
-              </article>
-
-              <dl class="info-list card">
-                <dt>Current focus</dt>
-                <dd>Project management and international business</dd>
-                <dt>Creative strengths</dt>
-                <dd>Design, photography, vlogging, poetry</dd>
-                <dt>Core mindset</dt>
-                <dd>Leadership, structure, communication, resilience</dd>
-              </dl>
-            </div>
-          </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section" id="experience" aria-labelledby="experience-title">
-          <div class="container">
-            <div class="section-heading">
-              <p class="section-heading__accent">Career path</p>
-              <h2 class="section-heading__title" id="experience-title">Experience</h2>
-            </div>
-
-            <div class="timeline">
-              <article class="timeline__item card">
-                <div class="timeline__meta">
-                  <p class="timeline__date">Aug 2023 - Present</p>
-                  <p class="timeline__place">Self-employed | Odesa, Ukraine</p>
-                </div>
-                <div class="timeline__content">
-                  <h3>Freelance Graphic Designer</h3>
-                  <ul class="list">
-                    <li>
-                      Analyzed market trends to maintain product quality and
-                      competitive value.
-                    </li>
-                    <li>
-                      Learned to meet deadlines and adapt to diverse customer
-                      demands.
-                    </li>
-                    <li>
-                      Improved communication and client-interaction skills in a
-                      professional setting.
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="section section--soft" id="education" aria-labelledby="education-title">
-          <div class="container">
-            <div class="section-heading">
-              <p class="section-heading__accent">Academic path</p>
-              <h2 class="section-heading__title" id="education-title">Education</h2>
-            </div>
-
-            <div class="cards-grid cards-grid--education">
-              <article class="card card--stack">
-                <p class="card__eyebrow">2025 - 2028</p>
-                <h3>Bachelor in International Business</h3>
-                <p class="card__meta">IESEG School of Management</p>
-                <p>
-                  Key subjects include Ethics and CSR, International Business
-                  Law, Mathematics for Business, Art and Science of Marketing,
-                  Debate and Persuasion, Research and Writing, and Business
-                  Exploration.
-                </p>
-              </article>
-
-              <article class="card card--stack">
-                <p class="card__eyebrow">September 2023 - June 2025</p>
-                <h3>A-Level Studies</h3>
-                <p class="card__meta">David Game College, London, UK</p>
-                <p>Economics, Mathematics, and Geography.</p>
-              </article>
-
-              <article class="card card--stack">
-                <p class="card__eyebrow">September 2019 - April 2024</p>
-                <h3>High School Diploma</h3>
-                <p class="card__meta">Lyceum “Mriya”, Odesa, Ukraine</p>
-                <p>General Secondary Education.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section" id="skills" aria-labelledby="skills-title">
-          <div class="container">
-            <div class="section-heading">
-              <p class="section-heading__accent">Capabilities</p>
-              <h2 class="section-heading__title" id="skills-title">Skills</h2>
-            </div>
-
-            <div class="chips-panel card">
-              <ul class="chips" aria-label="Skills list">
-                <li class="chip">Oral and written communication</li>
-                <li class="chip">Leadership</li>
-                <li class="chip">Critical thinking</li>
-                <li class="chip">Resilience</li>
-                <li class="chip">Problem solving</li>
-                <li class="chip">Negotiation</li>
-                <li class="chip">Initiative</li>
-                <li class="chip">Client interaction</li>
-                <li class="chip">Team coordination</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- Languages and Interests Section -->
-        <section class="section section--soft" aria-labelledby="profile-details-title">
-          <div class="container">
-            <div class="section-heading">
-              <p class="section-heading__accent">Personal dimension</p>
-              <h2 class="section-heading__title" id="profile-details-title">
-                Languages, Certifications, and Interests
-              </h2>
-            </div>
-
-            <div class="cards-grid cards-grid--three">
-              <article class="card">
-                <h3>Languages</h3>
-                <dl class="data-list">
-                  <dt>Ukrainian</dt>
-                  <dd>Native</dd>
-                  <dt>Russian</dt>
-                  <dd>Native</dd>
-                  <dt>English</dt>
-                  <dd>Advanced (C1)</dd>
-                  <dt>Spanish</dt>
-                  <dd>Pre-Intermediate (A2)</dd>
-                  <dt>French</dt>
-                  <dd>Beginner (A1)</dd>
-                </dl>
-              </article>
-
-              <article class="card">
-                <h3>Courses & Certifications</h3>
-                <ul class="list list--compact">
-                  <li>Hillel Project Management Course, Aug 2023 - Oct 2023</li>
-                  <li>Duke of Edinburgh’s Award, Bronze and Silver</li>
-                  <li>Cambridge English Assessment: B1 Score 144, B2 Score 179</li>
-                  <li>IELTS: Band 7.5 (2024)</li>
-                </ul>
-              </article>
-
-              <article class="card">
-                <h3>Hobbies & Interests</h3>
-                <ul class="list list--compact">
-                  <li>Drawing, with both digital and manual illustration</li>
-                  <li>Photography and vlogging since 2022</li>
-                  <li>Poetry writing and a personal collection in progress</li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- Activities Section -->
-        <section class="section" aria-labelledby="activities-title">
-          <div class="container">
-            <div class="section-heading">
-              <p class="section-heading__accent">Leadership in practice</p>
-              <h2 class="section-heading__title" id="activities-title">
-                Activities & Volunteering
-              </h2>
-            </div>
-
-            <article class="card card--feature">
-              <p class="card__eyebrow">September 2023 - June 2025</p>
-              <h3>Charity Committee, David Game College</h3>
-              <ul class="list">
-                <li>
-                  Collaborated with peers on fundraising initiatives and
-                  community outreach.
-                </li>
-                <li>
-                  Strengthened empathy, public communication, and promotional
-                  skills.
-                </li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="section section--soft" id="contact" aria-labelledby="contact-title">
-          <div class="container">
-            <div class="section-heading">
-              <p class="section-heading__accent">Stay connected</p>
-              <h2 class="section-heading__title" id="contact-title">Contact</h2>
-            </div>
-
-            <div class="contact-panel card">
-              <div class="contact-panel__intro">
-                <p class="contact-panel__signature">Correspondence</p>
-                <h3>Open to thoughtful opportunities, creative collaboration, and project-focused conversations.</h3>
-              </div>
-
-              <address class="contact-grid">
-                <a class="contact-card" href="mailto:reiji.sivana@gmail.com">
-                  <span class="contact-card__label">Email</span>
-                  <span class="contact-card__value">reiji.sivana@gmail.com</span>
-                </a>
-                <a class="contact-card" href="tel:+33614140868">
-                  <span class="contact-card__label">Phone</span>
-                  <span class="contact-card__value">+33 6 14 14 08 68</span>
-                </a>
-                <a class="contact-card" href="#" aria-label="LinkedIn profile placeholder">
-                  <span class="contact-card__label">LinkedIn</span>
-                  <span class="contact-card__value">linkedin.com/in/sofiia-ropiak</span>
-                </a>
-                <p class="contact-card">
-                  <span class="contact-card__label">Location</span>
-                  <span class="contact-card__value">Paris, France</span>
-                </p>
-              </address>
-
-              <div class="contact-form-embed card card--embed">
-                <div class="contact-form-embed__header">
-                  <p class="card__eyebrow">Message form</p>
-                  <h3>Send a note through the embedded Typeform</h3>
-                </div>
-                <div
-                  class="contact-form-embed__frame"
-                  data-tf-live="01KMRQ1TSA3D22SYTDQMMS2R7Y"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-    <script src="//embed.typeform.com/next/embed.js"></script>
-  </body>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+    </body>
 </html>

@@ -192,9 +192,14 @@
 
 .contact-form-embed__frame {
     display: grid;
+    position: relative;
+    isolation: isolate;
+    height: 31.25rem;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: calc(var(--radius-lg) - 0.3rem);
+    clip-path: inset(0 round calc(var(--radius-lg) - 0.3rem));
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
     background:
         linear-gradient(
             180deg,
@@ -211,6 +216,6 @@
 .contact-form-embed__frame iframe {
     display: block;
     width: 100%;
+    height: 100%;
     border: 0;
-    border-radius: inherit;
 }
