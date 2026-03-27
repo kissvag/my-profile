@@ -1,0 +1,56 @@
+/* Layout */
+.page-shell {
+  overflow: hidden;
+}
+
+.container {
+  width: min(calc(100% - 2rem), var(--container-width));
+  margin-inline: auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(22px);
+  background: rgba(35, 26, 35, 0.48);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding-block: 0.9rem;
+}
+
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.hero__grid,
+.about-grid,
+.contact-panel,
+.contact-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.cards-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.timeline {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.contact-grid {
+  grid-template-columns: 1fr;
+}

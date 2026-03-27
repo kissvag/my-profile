@@ -1,0 +1,47 @@
+/* Sections */
+.section {
+  padding-block: var(--space-2xl);
+}
+
+.section--soft::before {
+  content: "";
+  position: absolute;
+  inset: 1.5rem 0;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(216, 123, 147, 0.03));
+  pointer-events: none;
+}
+
+.section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  padding-top: calc(var(--space-2xl) + 2rem);
+}
+
+.hero__content {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+.about-grid {
+  align-items: start;
+}
+
+.contact-panel {
+  padding: var(--space-lg);
+}
+
+.contact-panel__intro {
+  display: grid;
+  gap: 0.9rem;
+}

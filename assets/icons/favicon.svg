@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Sofiia Ropiak Monogram</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#722D37" />
+      <stop offset="100%" stop-color="#463E4A" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#bg)" />
+  <path
+    d="M21 22h10.5c7.2 0 11 2.9 11 8.3 0 4.2-2.7 7-7 7.8l7.9 10.9h-7.6l-7-10.2h-2v10.2H21V22zm6.8 5.4v6.5h3.3c3.2 0 4.9-1.1 4.9-3.3 0-2.1-1.7-3.2-4.9-3.2h-3.3z"
+    fill="#F6F1F2"
+  />
+</svg>

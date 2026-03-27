@@ -1,0 +1,33 @@
+/* Background */
+.page-shell--texture {
+  position: relative;
+  isolation: isolate;
+}
+
+.page-shell--texture::before,
+.page-shell--texture::after {
+  content: "";
+  position: fixed;
+  inset: auto;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+  filter: blur(18px);
+  opacity: 0.65;
+}
+
+.page-shell--texture::before {
+  top: 6rem;
+  right: -7rem;
+  width: 18rem;
+  height: 18rem;
+  background: radial-gradient(circle, rgba(216, 123, 147, 0.22), transparent 68%);
+}
+
+.page-shell--texture::after {
+  bottom: 4rem;
+  left: -5rem;
+  width: 16rem;
+  height: 16rem;
+  background: radial-gradient(circle, rgba(114, 45, 55, 0.34), transparent 68%);
+}

@@ -1,0 +1,35 @@
+/* Cards */
+.card {
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+    var(--color-surface);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(14px);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(216, 123, 147, 0.24);
+}
+
+.card--feature {
+  display: grid;
+  gap: 1rem;
+}
+
+.card--portrait {
+  min-height: 27rem;
+  padding: 1.5rem;
+}
+
+.card--stack {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.chips-panel {
+  padding: var(--space-md);
+}

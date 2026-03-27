@@ -1,0 +1,28 @@
+/* Base */
+html {
+  background:
+    radial-gradient(circle at top, rgba(216, 123, 147, 0.16), transparent 32%),
+    linear-gradient(180deg, #271f27 0%, #2f252f 45%, #231a23 100%);
+}
+
+body {
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.7;
+  background: transparent;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  position: relative;
+}
+
+::selection {
+  color: var(--color-text);
+  background: rgba(216, 123, 147, 0.28);
+}
