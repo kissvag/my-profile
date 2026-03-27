@@ -4,170 +4,213 @@
 .contact-card,
 .button,
 .card {
-  transition:
-    transform var(--transition-base),
-    color var(--transition-base),
-    border-color var(--transition-base),
-    background-color var(--transition-base),
-    box-shadow var(--transition-base);
+    transition:
+        transform var(--transition-base),
+        color var(--transition-base),
+        border-color var(--transition-base),
+        background-color var(--transition-base),
+        box-shadow var(--transition-base);
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .site-brand:hover,
 .site-brand:focus-visible {
-  color: var(--color-text);
+    color: var(--color-text);
 }
 
 .list,
 .chips {
-  display: grid;
-  gap: 0.7rem;
-  padding-left: 1.1rem;
+    display: grid;
+    gap: 0.7rem;
+    padding-left: 1.1rem;
 }
 
 .list--compact {
-  gap: 0.55rem;
+    gap: 0.55rem;
 }
 
 .list li::marker {
-  color: var(--color-accent);
+    color: var(--color-accent);
 }
 
 .info-list,
 .data-list {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.85rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.85rem 1rem;
 }
 
 .info-list dt,
 .info-list dd,
 .data-list dt,
 .data-list dd {
-  padding-bottom: 0.9rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .info-list dt:last-of-type,
 .info-list dd:last-of-type,
 .data-list dt:last-of-type,
 .data-list dd:last-of-type {
-  padding-bottom: 0;
-  border-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
 }
 
 .info-list dd,
 .data-list dd {
-  text-align: right;
+    text-align: right;
 }
 
 .chips {
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  padding-left: 0;
-  list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    padding-left: 0;
+    list-style: none;
 }
 
 .chip {
-  padding: 0.9rem 1rem;
-  border: 1px solid rgba(216, 123, 147, 0.15);
-  border-radius: var(--radius-pill);
-  color: var(--color-text);
-  background: rgba(255, 255, 255, 0.03);
-  text-align: center;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(216, 123, 147, 0.15);
+    border-radius: var(--radius-pill);
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.03);
+    text-align: center;
 }
 
 .portrait-frame {
-  position: relative;
-  display: grid;
-  justify-items: center;
-  gap: 0.75rem;
-  min-height: 100%;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 0.75rem;
+    min-height: 100%;
 }
 
 .portrait-frame__halo {
-  position: absolute;
-  inset: 14% 8% auto;
-  height: 45%;
-  border-radius: 50%;
-  filter: blur(18px);
-  background: radial-gradient(circle, rgba(216, 123, 147, 0.28), transparent 70%);
+    position: absolute;
+    inset: 14% 8% auto;
+    height: 45%;
+    border-radius: 50%;
+    filter: blur(18px);
+    background: radial-gradient(
+        circle,
+        rgba(216, 123, 147, 0.28),
+        transparent 70%
+    );
 }
 
 .portrait-frame__primary {
-  width: min(100%, 19rem);
+    width: min(100%, 19rem);
 }
 
 .portrait-frame__gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
-  width: min(100%, 19rem);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+    width: min(100%, 19rem);
 }
 
 .media-frame {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: var(--radius-lg);
-  background:
-    linear-gradient(180deg, rgba(216, 123, 147, 0.18), rgba(70, 62, 74, 0.45)),
-    linear-gradient(145deg, rgba(114, 45, 55, 0.55), rgba(70, 62, 74, 0.88));
-  box-shadow: var(--shadow-glow);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: var(--radius-lg);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(216, 123, 147, 0.18),
+            rgba(70, 62, 74, 0.45)
+        ),
+        linear-gradient(145deg, rgba(114, 45, 55, 0.55), rgba(70, 62, 74, 0.88));
+    box-shadow: var(--shadow-glow);
 }
 
 .media-frame--small {
-  aspect-ratio: 1 / 1.08;
-  border-radius: calc(var(--radius-lg) - 0.35rem);
+    aspect-ratio: 1 / 1.08;
+    border-radius: calc(var(--radius-lg) - 0.35rem);
 }
 
 .media-frame__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .media-frame__image--portrait {
-  aspect-ratio: 4 / 5;
-  object-position: center 22%;
+    aspect-ratio: 4 / 5;
+    object-position: center 22%;
 }
 
 .media-frame__image--certificate {
-  object-position: center 32%;
+    object-position: center 32%;
 }
 
 .media-frame__image--night {
-  object-position: center 18%;
+    object-position: center 18%;
 }
 
 .timeline__item {
-  display: grid;
-  gap: 1rem;
+    display: grid;
+    gap: 1rem;
 }
 
 .timeline__content {
-  display: grid;
-  gap: 0.8rem;
+    display: grid;
+    gap: 0.8rem;
 }
 
 .contact-card {
-  display: grid;
-  gap: 0.45rem;
-  padding: 1.1rem 1.2rem;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  background: rgba(255, 255, 255, 0.03);
+    display: grid;
+    gap: 0.45rem;
+    padding: 1.1rem 1.2rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .contact-card__value {
-  color: var(--color-text);
-  font-style: normal;
-  word-break: break-word;
+    color: var(--color-text);
+    font-style: normal;
+    word-break: break-word;
 }
 
 .contact-card:hover,
 .contact-card:focus-visible {
-  transform: translateY(-2px);
-  border-color: rgba(216, 123, 147, 0.28);
+    transform: translateY(-2px);
+    border-color: rgba(216, 123, 147, 0.28);
+}
+
+.contact-form-embed {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form-embed__header {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.contact-form-embed__frame {
+    display: grid;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: calc(var(--radius-lg) - 0.3rem);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.015)
+        ),
+        rgba(31, 24, 33, 0.52);
+}
+
+.contact-form-embed__frame[data-tf-live] {
+    width: 100%;
+}
+
+.contact-form-embed__frame iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: inherit;
 }
